@@ -29,6 +29,9 @@
                                     <segment title="Price"/>
                                     <segment title="Tittle"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="0hH-Gx-e1T"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="82h-I1-sXt">
                                 <rect key="frame" x="16" y="120" width="343" height="547"/>
@@ -165,6 +168,9 @@
                                     <constraint firstAttribute="width" constant="100" id="gn3-LM-3eS"/>
                                     <constraint firstAttribute="height" constant="100" id="hqo-HK-IDa"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="fY8-7P-eOS" eventType="touchUpInside" id="fQH-R5-2WA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tittle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-wH-dvm" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="124" y="80" width="243" height="40"/>
@@ -252,12 +258,17 @@
                         <viewLayoutGuide key="safeArea" id="daD-eK-3tx"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add/Edit" id="jEU-2S-ccN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="uDN-x4-hFM"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="uDN-x4-hFM">
+                            <connections>
+                                <action selector="deletePressed:" destination="fY8-7P-eOS" id="IXa-FM-3a8"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="bR7-Xg-aNR" id="zwL-PO-qlZ"/>
                         <outlet property="priceField" destination="uy9-Nv-pgw" id="THX-9F-Jbl"/>
                         <outlet property="storePicker" destination="IaV-6w-ArL" id="Spt-pP-BXX"/>
+                        <outlet property="thumbImage" destination="huB-Nb-xfi" id="8j9-Ok-6GU"/>
                         <outlet property="tittleField" destination="ZUQ-wH-dvm" id="hHI-8n-K6q"/>
                     </connections>
                 </viewController>
