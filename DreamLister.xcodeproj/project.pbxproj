@@ -72,6 +72,7 @@
 				DC8BE18C203324FF003D2C19 /* ItemType+CoreDataClass.swift */,
 				DC8BE18A203324FF003D2C19 /* Item+CoreDataClass.swift */,
 				DC8BE18E203324FF003D2C19 /* Store+CoreDataClass.swift */,
+				DC2D532C20330D3700C60BE7 /* DreamLister.xcdatamodeld */,
 				DC26FAF32033201F00C6F5E2 /* Generated */,
 			);
 			path = Model;
@@ -80,6 +81,8 @@
 		DC26FAF120331FD800C6F5E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DC3C9906203253ED00A9E659 /* LaunchScreen.storyboard */,
+				DC3C98FE203253ED00A9E659 /* Main.storyboard */,
 				DC76E5522037C738006E4B89 /* CustomTextField.swift */,
 				DC8BE19D20334F98003D2C19 /* MaterialView.swift */,
 				DC8BE19F2033731D003D2C19 /* ItemCell.swift */,
@@ -92,6 +95,7 @@
 			children = (
 				DC3C98FC203253ED00A9E659 /* MainVC.swift */,
 				DC76E54E2037C18E006E4B89 /* ItemDetailsVC.swift */,
+				DC3C98FA203253ED00A9E659 /* AppDelegate.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,15 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				DC8BE19A20334F2A003D2C19 /* Sources */,
-				DC26FAF220331FE600C6F5E2 /* Controller */,
-				DC26FAF120331FD800C6F5E2 /* View */,
 				DC26FAF020331FC900C6F5E2 /* Model */,
-				DC3C98FA203253ED00A9E659 /* AppDelegate.swift */,
-				DC3C9904203253ED00A9E659 /* Assets.xcassets */,
-				DC3C9906203253ED00A9E659 /* LaunchScreen.storyboard */,
-				DC3C9909203253ED00A9E659 /* Info.plist */,
-				DC3C98FE203253ED00A9E659 /* Main.storyboard */,
-				DC2D532C20330D3700C60BE7 /* DreamLister.xcdatamodeld */,
+				DC26FAF120331FD800C6F5E2 /* View */,
+				DC26FAF220331FE600C6F5E2 /* Controller */,
 			);
 			path = DreamLister;
 			sourceTree = "<group>";
@@ -143,8 +141,10 @@
 		DC8BE19A20334F2A003D2C19 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DC3C9904203253ED00A9E659 /* Assets.xcassets */,
 				DC76E5502037C367006E4B89 /* imagePick.png */,
 				DC8BE19B20334F37003D2C19 /* teslaS.jpg */,
+				DC3C9909203253ED00A9E659 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -376,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8822C26BQ;
-				INFOPLIST_FILE = DreamLister/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DreamLister/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = delexa.DreamLister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -391,7 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z8822C26BQ;
-				INFOPLIST_FILE = DreamLister/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DreamLister/Sources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = delexa.DreamLister;
 				PRODUCT_NAME = "$(TARGET_NAME)";
