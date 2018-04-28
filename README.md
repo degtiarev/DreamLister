@@ -1,5 +1,5 @@
 # DreamLister
-App for creating dream list for future purchasing. Fore data storage used Core Data.
+App for creating dream list for future purchasing. For data storage used Core Data.
 
 # Screenshots
 <p align="left">
